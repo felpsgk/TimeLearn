@@ -22,7 +22,7 @@
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-4 py-4 me-sm-3 fs-6 fw-bolder" href="resume.php">Saiba mais</a>
                                     <a class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder" href="projects.php">Cadastrar</a>
-                                    <a class="btn btn-success btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="projects.php">Logar</a>
+                                    <a class="btn btn-logar btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="projects.php">Logar</a>
                                 </div>
                             </div>
                         </div>
