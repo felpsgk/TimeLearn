@@ -15,7 +15,7 @@
                             <!-- Header text content-->
                             <div class="text-center text-xxl-start">
                                 <div class="badge bg-gradient-primary-to-secondary text-white mb-4">
-                                    <div class="text-uppercase">Ensine &middot; Aprenda &middot; Descubra</div>
+                                    <div class="text-uppercase fs-6">Ensine &middot; Aprenda &middot; Descubra</div>
                                 </div>
                                 <div class="fs-3 fw-light text-muted">Aqui você detém o poder</div>
                                 <h1 class="display-2 fw-bolder mb-5"><span class="text-gradient d-inline">Busque ou forneça o conhecimento</span></h1>
@@ -45,7 +45,7 @@
                                 <p class="lead fw-light mb-4">Somos a TimeLearn</p>
                                 <p class="text-muted">Com objetivo de permitir o aprendizado e busca de conhecimento seletivo no seu tempo de disponibilidade, surgiu a TimeLearn. Aqui você poderá agendar ou se disponibilizar para consultorias e treinamentos de acordo com o seu tempo, e receber por isso!</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
-                                    <p class="lead fw-light mb-4">Criadores</p>
+                                    <p class="lead fw-bold mt-4 mb-1">Criadores</p>
                                 </div>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" href="https://twitter.com/GeekGk"><i class="bi bi-twitter"></i></a>
