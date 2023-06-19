@@ -14,6 +14,7 @@
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
+  --bs-felps: #d43d9a;
   --bs-pink: #e21e80;
   --bs-red: #dc3545;
   --bs-orange: #fd7e14;
@@ -11632,7 +11633,7 @@ html {
   fill: #1e30f3;
 }
 #btn-logar {
-  background-color: var(--bs-purple);
+  background-color: var(--bs-felps);
 }
 
 @media (min-width: 576px) {
