@@ -20,9 +20,9 @@
                                 <div class="fs-3 fw-light text-muted">Aqui você detém o poder</div>
                                 <h1 class="display-2 fw-bolder mb-5"><span class="text-gradient d-inline">Busque ou forneça o conhecimento</span></h1>
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
-                                    <a class="btn btn-primary btn-lg px-4 py-4 me-sm-3 fs-6 fw-bolder" href="resume.php">Saiba mais</a>
-                                    <a class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder" href="projects.php">Cadastrar</a>
-                                    <a id="btn-logar" class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="projects.php">Logar</a>
+                                    <a class="btn btn-primary btn-lg px-4 py-4 me-sm-3 fs-6 fw-bolder" href="#">Saiba mais</a>
+                                    <a id="btn-cad" class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder" href="#">Cadastrar</a>
+                                    <a id="btn-logar" class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="#">Logar</a>
                                 </div>
                             </div>
                         </div>

@@ -6,9 +6,9 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 small fw-bolder">
                 <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="resume.php">Resume</a></li>
-                <li class="nav-item"><a class="nav-link" href="projects.php">Projects</a></li>
-                <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Tópicos</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Consultores</a></li>
+                <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
             </ul>
         </div>
     </div>

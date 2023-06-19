@@ -11635,6 +11635,9 @@ html {
 #btn-logar {
   background-color: var(--bs-felps);
 }
+#btn-cad {
+  background-color: var(--bs-purple);
+}
 
 @media (min-width: 576px) {
   .profile {
