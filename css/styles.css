@@ -11633,14 +11633,24 @@ html {
   fill: #1e30f3;
 }
 #btn-logar {
+  transition-duration: 0.4s;
   border: 1px solid black;
   border-color: var(--bs-felps);
   background-color: var(--bs-felps);
 }
+#btn-logar:hover {
+  background-color: fuchsia;
+  color: white;
+}
 #btn-cad {
+  transition-duration: 0.4s;
   border: 1px solid black;
   border-color: var(--bs-purple);
   background-color: var(--bs-purple);
+}
+#btn-cad:hover {
+  background-color: indigo;
+  color: white;
 }
 
 @media (min-width: 576px) {

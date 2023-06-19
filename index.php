@@ -46,6 +46,8 @@
                                 <p class="text-muted">Com objetivo de permitir o aprendizado e busca de conhecimento seletivo no seu tempo de disponibilidade, surgiu a TimeLearn. Aqui você poderá agendar ou se disponibilizar para consultorias e treinamentos de acordo com o seu tempo, e receber por isso!</p>
                                 <div class="d-flex justify-content-center fs-2 gap-4">
                                     <p class="lead fw-light mb-4">Criadores</p>
+                                </div>
+                                <div class="d-flex justify-content-center fs-2 gap-4">
                                     <a class="text-gradient" href="https://twitter.com/GeekGk"><i class="bi bi-twitter"></i></a>
                                     <a class="text-gradient" href="https://www.linkedin.com/in/felipe-p-machado/"><i class="bi bi-linkedin"></i></a>
                                     <a class="text-gradient" href="https://github.com/felpsgk"><i class="bi bi-github"></i></a>
