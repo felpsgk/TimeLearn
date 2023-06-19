@@ -5,3 +5,14 @@
 */
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
+function enviarEmail() {
+    var nome = document.getElementById("nome").value;
+    var email = document.getElementById("email").value;
+    var mensagem = document.getElementById("mensagem").value;
+
+    var link = "mailto:contatofemachado@gmail.com"
+        + "?subject=" + encodeURIComponent("Contato pelo Formulário")
+        + "&body=" + encodeURIComponent("Nome: " + nome + "\nE-mail: " + email + "\nMensagem: " + mensagem);
+
+    window.location.href = link;
+}

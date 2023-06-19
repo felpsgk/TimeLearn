@@ -15,7 +15,7 @@ include 'includes/head.php'
                     <div class="text-center mb-5">
                         <div class="feature bg-primary bg-gradient-primary-to-secondary text-white rounded-3 mb-3"><i class="bi bi-envelope"></i></div>
                         <h1 class="fw-bolder">Entre em contato</h1>
-                        <p class="lead fw-normal text-muted mb-0">Let's work together!</p>
+                        <p class="lead fw-normal text-muted mb-0">Responderemos assim que possível!</p>
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
@@ -26,7 +26,7 @@ include 'includes/head.php'
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm">
+                            <form id="contactForm" onsubmit="enviarEmail(); return false;">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome">
                                     <label for="nomeInput">Digite seu nome</label>
@@ -40,7 +40,7 @@ include 'includes/head.php'
                                     <label for="msgInput">Qual sua mensagem?</label>
                                 </div>
                                 <!-- Submit Button-->
-                                <div class="col"><button class="btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
+                                <div class="row"><button class="col btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
                             </form>
                         </div>
                     </div>
