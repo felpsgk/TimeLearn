@@ -26,7 +26,7 @@ include 'includes/head.php'
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" onsubmit="enviarEmail(); return false;">
+                            <form id="contactForm" onsubmit="enviarEmail();">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome">
                                     <label for="nomeInput">Digite seu nome</label>
@@ -35,7 +35,7 @@ include 'includes/head.php'
                                     <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
                                     <label for="emailInput">Digite seu Email</label>
                                 </div>
-                                <div class="form-floating">
+                                <div class="form-floating mb-3">
                                     <textarea class="form-control" placeholder="Qual sua mensagem" id="msgInput"></textarea>
                                     <label for="msgInput">Qual sua mensagem?</label>
                                 </div>
