@@ -14,5 +14,5 @@ function enviarEmail() {
         + "?subject=" + encodeURIComponent("Contato pelo Formulário")
         + "&body=" + encodeURIComponent("Nome: " + nome + "\nE-mail: " + email + "\nMensagem: " + mensagem);
 
-    window.location.href = link;
+    window.open(link, "_blank");
 }
