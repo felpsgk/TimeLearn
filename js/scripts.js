@@ -6,9 +6,9 @@
 // This file is intentionally blank
 // Use this file to add JavaScript to your project
 function enviarEmail() {
-    var nome = document.getElementById("nome").value;
-    var email = document.getElementById("email").value;
-    var mensagem = document.getElementById("mensagem").value;
+    var nome = document.getElementById("nomeInput").value;
+    var email = document.getElementById("emailInput").value;
+    var mensagem = document.getElementById("msgInput").value;
 
     var link = "mailto:contatofemachado@gmail.com"
         + "?subject=" + encodeURIComponent("Contato pelo Formulário")
