@@ -11633,9 +11633,13 @@ html {
   fill: #1e30f3;
 }
 #btn-logar {
+  border: 1px solid black;
+  border-color: var(--bs-felps);
   background-color: var(--bs-felps);
 }
 #btn-cad {
+  border: 1px solid black;
+  border-color: var(--bs-purple);
   background-color: var(--bs-purple);
 }
 

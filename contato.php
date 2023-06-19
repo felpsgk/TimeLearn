@@ -26,7 +26,7 @@ include 'includes/head.php'
                             <!-- To make this form functional, sign up at-->
                             <!-- https://startbootstrap.com/solution/contact-forms-->
                             <!-- to get an API token!-->
-                            <form id="contactForm" onsubmit="enviarEmail();">
+                            <form id="contactForm" onsubmit="return enviarFormulario();">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome">
                                     <label for="nomeInput">Digite seu nome</label>
