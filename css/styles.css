@@ -11631,6 +11631,9 @@ html {
 .profile .dots-4 svg {
   fill: #1e30f3;
 }
+.btn-logar {
+  background-color: var(--bs-purple);
+}
 
 @media (min-width: 576px) {
   .profile {
