@@ -18,7 +18,6 @@ if (
     //echo $selecionaId;
     $resultado = mysqli_query($conn, $selecionaId);
     $row = mysqli_num_rows($resultado);
-    echo $row;
     $user = mysqli_fetch_array($resultado);
     $id = $user['id'];
     if ($row == 1) {
@@ -29,7 +28,6 @@ if (
     } 
     if ($row == 0) {
         $_SESSION['nao_autenticado'] = true;
-        echo $_SESSION['nao_autenticado'];
         header('Location: ../login.php');
         exit();
     }
