@@ -9,6 +9,10 @@
                 <li class="nav-item"><a class="nav-link" href="topicos.php">Tópicos</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Consultores</a></li>
                 <li class="nav-item"><a class="nav-link" href="contato.php">Contato</a></li>
+                <li class="nav-item"><a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                        <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                        Logout
+                    </a></li>
             </ul>
         </div>
     </div>
