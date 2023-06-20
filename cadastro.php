@@ -58,7 +58,7 @@ include 'includes/head.php'
                                         var user = $('#userInput').val();
                                         var senha = $('#senhaInput').val();
                                         var email = $('#emailInput').val();
-                                        var senha = $('#empresaInput').val();
+                                        var empresa = $('#empresaInput').val();
                                         // Definir a ação do CRUD
                                         var acao = 'create'; // Pode ser 'create', 'update' ou 'delete' dependendo da ação desejada
                                         // Criar um objeto de dados para enviar ao servidor
