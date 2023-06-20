@@ -38,6 +38,7 @@ include 'includes/head.php'
                                 </div>
                                 <div class="form-floating">
                                     <select class="form-select" id="empresaInput" aria-label="Floating label select example">
+                                        <option selected>Escolha</option>
                                         <?php
                                         require 'controller/empresa.php';
                                         readEmpresas();
