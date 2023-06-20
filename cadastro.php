@@ -7,6 +7,9 @@ include 'includes/head.php'
         <?php
         include 'includes/navbar.php'
         ?>
+        <?php
+        include 'includes/logoutModal.php'
+        ?>
         <!-- Page content-->
         <section class="py-5">
             <div class="container px-5">

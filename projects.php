@@ -35,6 +35,9 @@ include 'includes/head.php'
         <?php
         include 'includes/navbar.php'
         ?>
+        <?php
+        include 'includes/logoutModal.php'
+        ?>
         <!-- Projects Section-->
         <section class="py-5">
             <div class="container px-5 mb-5">
