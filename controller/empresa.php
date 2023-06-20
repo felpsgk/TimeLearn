@@ -7,8 +7,7 @@ function readEmpresas()
     $result = mysqli_query($conn, $sql);
     //echo $result;
     while ($row = mysqli_fetch_array($result)) :; ?>
-        <option selected>Escolha</option>
-        <option id="empresa" value="<?php echo $row['id'] ?>"><?php echo $row['empresa'] ?></option>
+        <option id="id" value="<?php echo $row['id'] ?>"><?php echo $row['nome'] ?></option>
 
 <?php endwhile;
 }
