@@ -1,5 +1,8 @@
+<?php
+session_start();
+?>
 <!doctype html>
-<html lang="en">
+<html lang="pt">
 
 <head>
     <!-- Required meta tags -->
@@ -7,16 +10,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>FVG - Login</title>
+    <title>Login - TimeLearn</title>
 </head>
 
 <body>
     <div class="container " style="display: flex; justify-content: center; align-items: center; height: 100vh">
         <div class="container">
             <?php
-            session_start();
-            echo $_SESSION['nao_autenticado'];
-            echo isset($_SESSION['nao_autenticado']);
             if (isset($_SESSION['nao_autenticado'])) :
             ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
