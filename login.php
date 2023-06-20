@@ -21,6 +21,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             <?php
+            echo $_SESSION['nao_autenticado'];
             endif;
             unset($_SESSION['nao_autenticado']);
             ?>

@@ -25,7 +25,7 @@
                                 <div class="d-grid gap-3 d-sm-flex justify-content-sm-center justify-content-xxl-start mb-3">
                                     <a class="btn btn-primary btn-lg px-4 py-4 me-sm-3 fs-6 fw-bolder" href="#">Saiba mais</a>
                                     <a id="btn-cad" class="btn btn-outline- btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="cadastro.php">Cadastrar</a>
-                                    <a id="btn-logar" class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="#">Logar</a>
+                                    <a id="btn-logar" class="btn btn-outline-dark btn-lg px-4 py-4 fs-6 fw-bolder text-white" href="login.php">Logar</a>
                                 </div>
                             </div>
                         </div>
