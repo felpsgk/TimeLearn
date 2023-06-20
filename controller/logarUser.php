@@ -22,11 +22,11 @@ if (
     if ($row == 1) {
         $_SESSION['usuario'] = $usuario;
         $_SESSION['id'] = $id;
-        header('Location: index.php');
+        header('Location: ../index.php');
         exit();
     } else {
         $_SESSION['nao_autenticado'] = true;
-        header('Location: login.php');
+        header('Location: ../login.php');
         exit();
     }
 }
