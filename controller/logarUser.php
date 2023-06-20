@@ -26,8 +26,10 @@ if (
         $_SESSION['id'] = $id;
         header('Location: ../topicos.php');
         exit();
-    } else {
+    } 
+    if ($row == 0) {
         $_SESSION['nao_autenticado'] = true;
+        echo $_SESSION['nao_autenticado'];
         header('Location: ../login.php');
         exit();
     }
