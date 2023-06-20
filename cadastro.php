@@ -46,7 +46,7 @@ include 'includes/head.php'
                                     <label for="empresaInput">Escolha sua empresa/função</label>
                                 </div>
                                 <!-- Submit Button-->
-                                <div class="row"><button class="col btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
+                                <div class="row" id="alerta"><button class="col btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
                             </form>
                             <script>
                                 $(document).ready(function() {
@@ -77,7 +77,7 @@ include 'includes/head.php'
                                             data: data,
                                             success: function(resultado) {
                                                 // Manipular a resposta do servidor aqui
-                                                $('#enviarBtn').append(resultado);
+                                                $('#alerta').append(resultado);
                                             },
                                             error: function(xhr, status, error) {
                                                 // Lidar com erros de requisição aqui
