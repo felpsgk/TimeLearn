@@ -4,6 +4,7 @@ session_start();
 
 require 'conexao.php';
 
+$_SESSION['nao_autenticado'] = false;
 if (
     isset($_POST['login']) ||
     !empty($_POST['login']) ||
@@ -11,7 +12,6 @@ if (
     !empty($_POST['senha'])
 ) //Neste caso > 0 é só uma verificação se a chave do usuário é valida
 {
-
     $usuario = mysqli_real_escape_string($conn, $_POST['login']);
     $senha = mysqli_real_escape_string($conn, $_POST['senha']);
     $selecionaId = "SELECT * FROM `users` WHERE usuario = '$usuario' AND senha = md5('$senha')";
