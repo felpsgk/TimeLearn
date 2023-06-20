@@ -4,14 +4,14 @@
     $servername = "localhost:3306"; /* pode deixar localhost */
     $username = "hnrtco66_felpsgk"; /* nome do usuario do banco de dados */ 
     $password = "rootdoadmin"; /* ssenha do banco de dados caso exista senao deixa $password = "" */
-    $dbname = "hnrtco66_fvgweb"; /* nome do seu banco de dados*/
+    $dbname = "hnrtco66_projetoConsult"; /* nome do seu banco de dados*/
 
     $port = "3306"; /* nome do seu banco de dados*/
     // Criando a conexão com o banco de dados
     $conn = new mysqli($servername, $username, $password, $dbname, $port);
 
     //UTILIZADO PRA CRUD
-    $connPDO = new PDO("mysql:host=localhost:3306;dbname=hnrtco66_fvgweb", $username, $password);
+    $connPDO = new PDO("mysql:host=localhost:3306;dbname=hnrtco66_projetoConsult", $username, $password);
 
     // Checando a conexão com o banco de dados
 
