@@ -36,7 +36,7 @@ include 'includes/head.php'
                                     <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
                                     <label for="emailInput">Digite seu Email</label>
                                 </div>
-                                <div class="form-floating">
+                                <div class="form-floating mb-3">
                                     <select class="form-select" id="empresaInput" aria-label="Floating label select example">
                                         <option selected>Escolha</option>
                                         <?php
