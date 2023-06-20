@@ -10,18 +10,18 @@ if ($_POST['acao'] == "create") {
     // Realiza a inserção no banco de dados 
     $sql = "INSERT INTO users (nome, usuario, senha, email, idempresa) 
     VALUES ('$nome', '$user', MD5('$senha'), '$email', $empresa)";
-    echo $sql;
+    //echo $sql;
     if ($conn->query($sql) === true) {
-        echo '<div class="alert alert-secondary" role="alert">Usuario'. $nome .' cadastrado com sucesso</div>';
+        $resultado = '<div class="alert alert-secondary" role="alert">Usuario'. $nome .' cadastrado com sucesso</div>';
     } else {
-        echo '<div class="alert alert-secondary" role="alert">Erro ao cadastrar ->'. $conn->error . '</div>';;
+        $resultado = '<div class="alert alert-secondary" role="alert">Erro ao cadastrar ->'. $conn->error . '</div>';;
     }
 
     // Fecha a conexão com o banco de dados
     $conn->close();
 
     // Retorna a resposta para o Ajax
-    echo $response;
+    echo $resultado;
 }
 if ($_POST['acao'] == "update") {
 }

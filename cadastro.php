@@ -75,10 +75,9 @@ include 'includes/head.php'
                                             url: 'controller/users.php',
                                             type: 'POST',
                                             data: data,
-                                            success: function(response) {
+                                            success: function(resultado) {
                                                 // Manipular a resposta do servidor aqui
-                                                console.log(response);
-                                                alert('Usuário salvo com sucesso!');
+                                                $('#enviarBtn').append(resultado);
                                             },
                                             error: function(xhr, status, error) {
                                                 // Lidar com erros de requisição aqui
