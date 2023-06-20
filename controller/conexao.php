@@ -8,10 +8,10 @@
 
     $port = "3306"; /* nome do seu banco de dados*/
     // Criando a conexão com o banco de dados
-    $strcon = new mysqli($servername, $username, $password, $dbname, $port);
+    $conn = new mysqli($servername, $username, $password, $dbname, $port);
 
     //UTILIZADO PRA CRUD
-    $connect = new PDO("mysql:host=localhost:3306;dbname=hnrtco66_fvgweb", $username, $password);
+    $connPDO = new PDO("mysql:host=localhost:3306;dbname=hnrtco66_fvgweb", $username, $password);
 
     // Checando a conexão com o banco de dados
 
