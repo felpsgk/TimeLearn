@@ -1,4 +1,32 @@
 <?php
+//session_start();
+session_start();
+if(!$_SESSION['usuario']){
+    header('Location: login.php');
+    exit();
+}
+//echo $_SESSION['perfil'];
+//echo $_SESSION['id'];
+// switch ($_SESSION['perfil']) {
+//     case '6':
+//         echo '<style type="text/css">
+//         .registroPresenca {
+//             display: none;
+//             }
+//             #atualizamedico {
+//                 display: none;
+//             }
+//             #deletamedico {
+//                 display: none;
+//             }
+//             #medicoCadModalBt {
+//                 display: none;
+//             }
+//             </style>';
+//         break;
+// }
+?>
+<?php
 include 'includes/head.php'
 ?>
 

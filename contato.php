@@ -19,13 +19,6 @@ include 'includes/head.php'
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- * * SB Forms Contact Form * *-->
-                            <!-- * * * * * * * * * * * * * * *-->
-                            <!-- This form is pre-integrated with SB Forms.-->
-                            <!-- To make this form functional, sign up at-->
-                            <!-- https://startbootstrap.com/solution/contact-forms-->
-                            <!-- to get an API token!-->
                             <form id="contactForm" onsubmit="return enviarFormulario();">
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome">
