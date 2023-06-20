@@ -55,7 +55,7 @@ include 'includes/head.php'
                                         event.preventDefault();
                                         // Obter os valores dos campos do formulário
                                         var nome = $('#nomeInput').val();
-                                        var senha = $('#userInput').val();
+                                        var user = $('#userInput').val();
                                         var senha = $('#senhaInput').val();
                                         var email = $('#emailInput').val();
                                         var senha = $('#empresaInput').val();
