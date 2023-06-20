@@ -2,7 +2,7 @@
 function readEmpresas()
 {
     require 'conexao.php';
-    $sql = "SELECT id, empresa FROM empresa ORDER BY empresa ASC;";
+    $sql = "SELECT id, nome FROM empresa ORDER BY nome ASC;";
     echo $sql;
     $result = mysqli_query($conn, $sql);
     //echo $result;
