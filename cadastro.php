@@ -46,7 +46,7 @@ include 'includes/head.php'
                                     <label for="empresaInput">Escolha sua empresa/função</label>
                                 </div>
                                 <!-- Submit Button-->
-                                <div class="row" id="alerta"><button class="col btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
+                                <div class="row" id="alerta"><button class="col btn btn-primary btn-lg mb-3" id="enviarBtn" type="submit">Enviar</button></div>
                             </form>
                             <script>
                                 $(document).ready(function() {

@@ -12,7 +12,7 @@ if ($_POST['acao'] == "create") {
     VALUES ('$nome', '$user', MD5('$senha'), '$email', $empresa)";
     //echo $sql;
     if ($conn->query($sql) === true) {
-        $resultado = '<div class="alert alert-secondary" role="alert">Usuario'. $nome .' cadastrado com sucesso</div>';
+        $resultado = '<div class="alert alert-primary" role="alert">Usuário '. $nome .' cadastrado com sucesso!</div>';
     } else {
         $resultado = '<div class="alert alert-secondary" role="alert">Erro ao cadastrar ->'. $conn->error . '</div>';;
     }
