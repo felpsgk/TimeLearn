@@ -2,26 +2,28 @@
 require 'conexao.php';
 if ($_POST['acao'] == "create") {
     $nome = $_POST['nome'];
-    $email = $_POST['email'];
+    $user = $_POST['user'];
     $senha = $_POST['senha'];
-    
+    $email = $_POST['email'];
+    $empresa = $_POST['empresa'];
+
     // Realiza a inserção no banco de dados 
-    $sql = "INSERT INTO usuarios (nome, email, senha) VALUES ('$nome', '$email', MD5('$senha'))";
-    
+    $sql = "INSERT INTO usuarios (nome, usuario, senha, email, idempresa) 
+    VALUES ('$nome', '$user', MD5('$senha'), '$email', $empresa)";
+
     if ($conn->query($sql) === true) {
-        $response = 'Usuário cadastrado com sucesso!';
+        
+        echo '<div class="alert alert-secondary" role="alert">Usuario'. $nome .' cadastrado com sucesso</div>';
+        
     } else {
-        $response = 'Erro ao cadastrar o usuário: ' . $conn->error;
+        echo '<div class="alert alert-secondary" role="alert">Erro ao cadastrar ->'. $conn->error . '</div>';;
     }
-    
+
     // Fecha a conexão com o banco de dados
     $conn->close();
-    
+
     // Retorna a resposta para o Ajax
     echo $response;
-
 }
 if ($_POST['acao'] == "update") {
-    
-
 }

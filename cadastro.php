@@ -25,12 +25,25 @@ include 'includes/head.php'
                                     <label for="nomeInput">Digite seu nome</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                                    <label for="emailInput">Digite seu Email</label>
+                                    <input type="text" class="form-control" id="userInput" placeholder="Seu usuario">
+                                    <label for="userInput">Digite seu usuário</label>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="password" class="form-control" id="senhaInput" placeholder="">
                                     <label for="senhaInput">Digite uma senha</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
+                                    <label for="emailInput">Digite seu Email</label>
+                                </div>
+                                <div class="form-floating">
+                                    <select class="form-select" id="empresaInput" aria-label="Floating label select example">
+                                        <?php
+                                        require 'controller/empresa.php';
+                                        readEmpresas();
+                                        ?>
+                                    </select>
+                                    <label for="empresaInput">Escolha sua empresa/função</label>
                                 </div>
                                 <!-- Submit Button-->
                                 <div class="row"><button class="col btn btn-primary btn-lg" id="enviarBtn" type="submit">Enviar</button></div>
@@ -42,15 +55,19 @@ include 'includes/head.php'
                                         event.preventDefault();
                                         // Obter os valores dos campos do formulário
                                         var nome = $('#nomeInput').val();
-                                        var email = $('#emailInput').val();
+                                        var senha = $('#userInput').val();
                                         var senha = $('#senhaInput').val();
+                                        var email = $('#emailInput').val();
+                                        var senha = $('#empresaInput').val();
                                         // Definir a ação do CRUD
                                         var acao = 'create'; // Pode ser 'create', 'update' ou 'delete' dependendo da ação desejada
                                         // Criar um objeto de dados para enviar ao servidor
                                         var data = {
                                             nome: nome,
-                                            email: email,
+                                            user: user,
                                             senha: senha,
+                                            email: email,
+                                            empresa: empresa,
                                             acao: acao
                                         };
                                         // Enviar a solicitação AJAX
