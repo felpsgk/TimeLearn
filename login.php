@@ -14,6 +14,7 @@
     <div class="container " style="display: flex; justify-content: center; align-items: center; height: 100vh">
         <div class="container">
             <?php
+            session_start();
             echo $_SESSION['nao_autenticado'];
             echo isset($_SESSION['nao_autenticado']);
             if (isset($_SESSION['nao_autenticado'])) :
@@ -23,7 +24,6 @@
                     <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                 </div>
             <?php
-            echo $_SESSION['nao_autenticado'];
             endif;
             unset($_SESSION['nao_autenticado']);
             ?>
