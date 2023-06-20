@@ -12,11 +12,11 @@ if (
 ) //Neste caso > 0 é só uma verificação se a chave do usuário é valida
 {
 
-    $usuario = mysqli_real_escape_string($strcon, $_POST['login']);
-    $senha = mysqli_real_escape_string($strcon, $_POST['senha']);
+    $usuario = mysqli_real_escape_string($conn, $_POST['login']);
+    $senha = mysqli_real_escape_string($conn, $_POST['senha']);
     $selecionaId = "SELECT * FROM `users` WHERE usuario = '$usuario' AND senha = md5('$senha')";
     echo $selecionaId;
-    $resultado = mysqli_query($strcon, $selecionaId);
+    $resultado = mysqli_query($conn, $selecionaId);
     $row = mysqli_num_rows($resultado);
     $user = mysqli_fetch_array($resultado);
     $id = $user['id'];
