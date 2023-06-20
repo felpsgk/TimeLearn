@@ -4,7 +4,6 @@ session_start();
 
 require 'conexao.php';
 
-$_SESSION['nao_autenticado'] = false;
 if (
     isset($_POST['login']) ||
     !empty($_POST['login']) ||

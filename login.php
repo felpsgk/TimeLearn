@@ -14,7 +14,7 @@
     <div class="container " style="display: flex; justify-content: center; align-items: center; height: 100vh">
         <div class="container">
             <?php
-            if (isset($_SESSION['nao_autenticado'])) :
+            if (!$_SESSION['nao_autenticado']) :
             ?>
                 <div class="alert alert-danger alert-dismissible fade show" role="alert">
                     <p>Usuário ou senha <strong>INCORRETO!</strong></p>
