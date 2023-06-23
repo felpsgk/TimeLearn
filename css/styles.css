@@ -340,8 +340,7 @@ th {
 label {
   display: inline-block;
 }
-
-button {
+.btn-topicos{
   background: linear-gradient(to right, #1e30f3, #6f42c1);
   color: #fff;
   width: 100%;
@@ -349,6 +348,9 @@ button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+}
+button {
+  border-radius: 0px;
 }
 
 button:focus:not(:focus-visible) {
