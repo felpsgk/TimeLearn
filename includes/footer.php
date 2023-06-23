@@ -23,12 +23,12 @@
         var caracteresDigitados = $(this).val().length;
         var caracteresRestantes = limite - caracteresDigitados;
         $(".caracteresDesc").text(caracteresRestantes);
-        console.log($(this).height.toString);
-        console.log($(this).scrollHeight.toString);
-        $(this).style.height = "auto";
-        textarea.style.height = textarea.scrollHeight + "px";
-        console.log($(this).height.toString);
-        console.log($(this).scrollHeight.toString);
+    });
+    $("textarea").each(function() {
+        this.setAttribute("style", "height:" + (this.scrollHeight) + "px;overflow-y:hidden;");
+    }).on("input", function() {
+        this.style.height = 0;
+        this.style.height = (this.scrollHeight) + "px";
     });
 </script>
 <!-- Bootstrap core JS-->
