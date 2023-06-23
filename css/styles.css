@@ -2859,6 +2859,7 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #fff;
   --bs-btn-disabled-bg: #1e30f3;
   --bs-btn-disabled-border-color: #1e30f3;
+  --bs-gradient: linear-gradient(180deg, #1e30f3, #6f42c1);
 }
 .btn-topicos{
   --bs-btn-color: #fff;
