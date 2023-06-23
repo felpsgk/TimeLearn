@@ -13,7 +13,7 @@ function readTopicos()
                     <div class="p-5">
                         <h2 class="fw-bolder"><?php echo $row['nome'] ?></h2>
                         <p class="text-break"><?php echo $row['descricao'] ?></p>
-                        <button style="background: linear-gradient(to right, #4a47a3, #643cad);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" type="button" class="buscarhorarios">Buscar agenda</button>
+                        <button style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" type="button" class="buscarhorarios">Buscar agenda</button>
                     </div>
                     <img class="img-fluid" style="width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                 </div>
