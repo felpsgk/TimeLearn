@@ -1,4 +1,5 @@
 <?php
+session_start();
 include 'includes/head.php';
 echo $_SESSION['usuario'];
 echo $_SESSION['perfil'];
