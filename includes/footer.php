@@ -15,6 +15,15 @@
         </div>
     </div>
 </footer>
+<!--CONTA CARACTERES RESTANTES-->
+<script>
+    $(document).on("input", "#descTopico", function() {
+        var limite = 512;
+        var caracteresDigitados = $(this).val().length;
+        var caracteresRestantes = limite - caracteresDigitados;
+        $(".caracteresDesc").text(caracteresRestantes);
+    });
+</script>
 <!-- Bootstrap core JS-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 <!-- Core theme JS-->

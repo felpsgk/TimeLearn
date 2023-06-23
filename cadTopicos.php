@@ -8,10 +8,6 @@ if ($_SESSION['perfil'] <> 1) {
             </style>';
 }
 include 'includes/head.php';
-echo $_SESSION['usuario'];
-echo $_SESSION['perfil'];
-echo $_SESSION['id'];
-
 ?>
 
 <body class="d-flex flex-column h-100">
@@ -34,60 +30,44 @@ echo $_SESSION['id'];
                     </div>
                     <div class="row gx-5 justify-content-center">
                         <div class="col-lg-8 col-xl-6">
-                            <form id="cadastroForm">
+                            <form id="cadastroTopicoForm">
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="nomeInput" placeholder="Seu nome">
+                                    <input type="text" class="form-control" name="nomeInput" id="nomeInput" placeholder="Seu nome">
                                     <label for="nomeInput">Digite o nome do tópico</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="userInput" placeholder="Seu usuario">
-                                    <label for="userInput">Digite seu usuário</label>
+                                    <textarea maxLength="512" required="required" class="form-control" placeholder="Leave a comment here" name="descTopico" id="descTopico"></textarea>
+                                    <label for="descTopico">Descrição do tópico</label>
+                                    <p class="small text-end"><span class="caracteresDesc">512</span> Restantes</p>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="password" class="form-control" id="senhaInput" placeholder="">
-                                    <label for="senhaInput">Digite uma senha</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="emailInput" placeholder="name@example.com">
-                                    <label for="emailInput">Digite seu Email</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <select class="form-select" id="empresaInput" aria-label="Floating label select example">
-                                        <?php
-                                        require 'controller/empresa.php';
-                                        readEmpresas();
-                                        ?>
-                                    </select>
-                                    <label for="empresaInput">Escolha sua empresa/função</label>
+                                    <input type="text" class="form-control" name="imgInput" id="imgInput" placeholder="Seu nome">
+                                    <label for="imgInput">URL da imagem a ser exibida (considere upar no servidor no futuro)</label>
                                 </div>
                                 <!-- Submit Button-->
                                 <div class="row" id="alerta"><button class="col btn btn-primary btn-lg mb-3" id="enviarBtn" type="submit">Enviar</button></div>
                             </form>
                             <script>
                                 $(document).ready(function() {
-                                    $('#cadastroForm').submit(function(event) {
+                                    $('#cadastroTopicoForm').submit(function(event) {
                                         // Impedir o envio padrão do formulário
                                         event.preventDefault();
                                         // Obter os valores dos campos do formulário
                                         var nome = $('#nomeInput').val();
-                                        var user = $('#userInput').val();
-                                        var senha = $('#senhaInput').val();
-                                        var email = $('#emailInput').val();
-                                        var empresa = $('#empresaInput').val();
+                                        var user = $('#descTopico').val();
+                                        var senha = $('#imgInput').val();
                                         // Definir a ação do CRUD
                                         var acao = 'create'; // Pode ser 'create', 'update' ou 'delete' dependendo da ação desejada
                                         // Criar um objeto de dados para enviar ao servidor
                                         var data = {
                                             nome: nome,
-                                            user: user,
-                                            senha: senha,
-                                            email: email,
-                                            empresa: empresa,
+                                            descricao: descricao,
+                                            imgsrc: imgsrc,
                                             acao: acao
                                         };
                                         // Enviar a solicitação AJAX
                                         $.ajax({
-                                            url: 'controller/users.php',
+                                            url: 'controller/topicos.php',
                                             type: 'POST',
                                             data: data,
                                             success: function(resultado) {
@@ -97,7 +77,7 @@ echo $_SESSION['id'];
                                             error: function(xhr, status, error) {
                                                 // Lidar com erros de requisição aqui
                                                 console.error(error);
-                                                alert('Ocorreu um erro ao salvar o usuário. Por favor, tente novamente.');
+                                                alert('Ocorreu um erro ao salvar o topico. Por favor, tente novamente.');
                                             }
                                         });
                                     });
