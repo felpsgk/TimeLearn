@@ -1,6 +1,6 @@
 <?php
 session_start();
-if (!$_SESSION['perfil'] <> 1) {
+if ($_SESSION['perfil'] <> 1) {
     echo '<style type="text/css">
             #master {
                 display: none;
@@ -14,8 +14,8 @@ echo $_SESSION['id'];
 
 ?>
 
-<body id="master" class="d-flex flex-column h-100">
-    <main class="flex-shrink-0">
+<body class="d-flex flex-column h-100">
+    <main id="master" class="flex-shrink-0">
         <?php
         include 'includes/navbar.php'
         ?>
