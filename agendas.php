@@ -64,6 +64,9 @@ include 'includes/head.php'
             </div>
         </section>
     </main>
+    <?php
+    include 'includes/modais.php'
+    ?>
 
     <?php
     include 'includes/footer.php'
