@@ -8,7 +8,7 @@ function readTopicos()
     //echo $result;
     while ($row = mysqli_fetch_array($result)) :; ?>
 
-        <div class="col-sm-12 col-md-12 col-lg-6 col-xl-12 col-xxl-6 p-5">
+        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 col-xxl-6">
             <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
                 <div class="card-body p-0">
                     <div class="d-flex align-items-center">
