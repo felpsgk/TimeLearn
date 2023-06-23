@@ -19,7 +19,7 @@ function readAgendas()
                         <h2 class="fw-bolder"><?php echo $row['topico'] ?></h2>
                         <p class="text-break"><?php echo $row['resumotopico'] ?></p>
                         <div class="row">
-                            <p class="col text-start m-2" id="horaCurso"><?php echo $row['duração'] ?> minutos</p>
+                            <p class="col text-start m-2" id="horaCurso"><?php echo $row['duracao'] ?> minutos</p>
                             <p class="col text-end m-2" id="dataCurso">Dia <?php echo $row['dataagenda'] ?></p>
                         </div>
                         <a style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" onmouseover="this.style.background ='linear-gradient(to right, #6f42c1, #1e30f3)';" onmouseout="this.style.background ='linear-gradient(to right, #1e30f3, #6f42c1)';" class="btn" role="button" href="#">Agendar</a>
