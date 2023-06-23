@@ -45,7 +45,7 @@ include 'includes/head.php'
                     <h1 class="display-5 fw-bolder mb-0"><span class="text-gradient d-inline">Assuntos disponíveis na plataforma</span></h1>
                 </div>
                 <div class="row gx-5 justify-content-center">
-                    <div class="col-lg-11 col-xl-9 col-xxl-8">
+                    <div class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
                         <div class="row">
                                 <?php
                                 require 'controller/topicos.php';
