@@ -41,11 +41,7 @@ include 'includes/head.php';
                                     <p class="small text-end"><span class="caracteresDesc">512</span> Restantes</p>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" name="imgInput" id="imgInput" placeholder="Seu nome">
-                                    <label for="imgInput">URL da imagem a ser exibida (considere upar no servidor no futuro)</label>
-                                </div>
-                                <div class="form-floating mb-3">
-                                    <select class="form-select" id="empresaInput" aria-label="Floating label select example">
+                                    <select class="form-select" id="imgInput" aria-label="Floating label select example">
                                         <?php
                                         $diretorio = 'img/'; // diretório que deseja listar os arquivos
                                         $arquivos = scandir($diretorio); // obtém os nomes dos arquivos no diretório
@@ -57,7 +53,7 @@ include 'includes/head.php';
                                         }
                                         ?>
                                     </select>
-                                    <label for="empresaInput">Escolha sua empresa/função</label>
+                                    <label for="imgInput">Escolha sua empresa/função</label>
                                 </div>
                                 <!-- Submit Button-->
                                 <div class="row" id="alerta"><button class="col btn btn-primary btn-lg mb-3" id="enviarBtn" type="submit">Enviar</button></div>
