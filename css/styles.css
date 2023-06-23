@@ -11652,7 +11652,15 @@ html {
   background-color: indigo;
   color: white;
 }
-
+.buscar-horarios {
+  background: linear-gradient(to right, #4a47a3, #643cad);
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
 @media (min-width: 576px) {
   .profile {
     height: 60vw;
