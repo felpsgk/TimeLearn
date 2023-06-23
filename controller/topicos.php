@@ -7,6 +7,7 @@ function readTopicos()
     $result = mysqli_query($conn, $sql);
     //echo $result;
     while ($row = mysqli_fetch_array($result)) :; ?>
+    
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
                 <div class="d-flex align-items-center">
@@ -40,7 +41,7 @@ if ($_POST['acao'] == "create") {
     VALUES ('$nome', '$descricao','$imgsrc')";
     //echo $sql;
     if ($conn->query($sql) === true) {
-        $resultado = '<div class="alert alert-success alert-dismissible fade show" role="alert">Usuário '. $nome .' cadastrado com sucesso! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
+        $resultado = '<div class="alert alert-success alert-dismissible fade show" role="alert">Tópico '. $nome .' cadastrado com sucesso! <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button></div>';
     } else {
         $resultado = '<div class="alert alert-secondary" role="alert">Erro ao cadastrar ->'. $conn->error . '</div>';;
     }
