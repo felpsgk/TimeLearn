@@ -13,7 +13,12 @@ function readTopicos()
                     <div class="p-5">
                         <h2 class="fw-bolder"><?php echo $row['nome'] ?></h2>
                         <p class="text-break"><?php echo $row['descricao'] ?></p>
-                        <button type="button" style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" class="button btn btn-primary">Buscar agenda</button>
+                        <button type="button" 
+                        style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" 
+                        onmouseover="this.style.background ='linear-gradient(to right, #6f42c1, #1e30f3)';"  
+                        onmouseout="this.style.background ='linear-gradient(to right, #1e30f3, #6f42c1)';" 
+                        class="button"
+                        href="agendas.php">Buscar agenda</button>
                     </div>
                     <img class="img-fluid" style="width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                 </div>
