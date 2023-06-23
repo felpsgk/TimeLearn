@@ -54,8 +54,8 @@ include 'includes/head.php';
                                         event.preventDefault();
                                         // Obter os valores dos campos do formulário
                                         var nome = $('#nomeInput').val();
-                                        var user = $('#descTopico').val();
-                                        var senha = $('#imgInput').val();
+                                        var descricao = $('#descTopico').val();
+                                        var imgsrc = $('#imgInput').val();
                                         // Definir a ação do CRUD
                                         var acao = 'create'; // Pode ser 'create', 'update' ou 'delete' dependendo da ação desejada
                                         // Criar um objeto de dados para enviar ao servidor
