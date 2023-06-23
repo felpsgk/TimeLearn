@@ -36,13 +36,28 @@ include 'includes/head.php';
                                     <label for="nomeInput">Digite o nome do tópico</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <textarea maxLength="512" style="height: 160px;" required="required" class="form-control" placeholder="Leave a comment here" name="descTopico" id="descTopico"></textarea>
+                                    <textarea maxLength="512" required="required" class="form-control" placeholder="Leave a comment here" name="descTopico" id="descTopico"></textarea>
                                     <label for="descTopico">Descrição do tópico</label>
                                     <p class="small text-end"><span class="caracteresDesc">512</span> Restantes</p>
                                 </div>
                                 <div class="form-floating mb-3">
                                     <input type="text" class="form-control" name="imgInput" id="imgInput" placeholder="Seu nome">
                                     <label for="imgInput">URL da imagem a ser exibida (considere upar no servidor no futuro)</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <select class="form-select" id="empresaInput" aria-label="Floating label select example">
+                                        <?php
+                                        $diretorio = 'img/'; // diretório que deseja listar os arquivos
+                                        $arquivos = scandir($diretorio); // obtém os nomes dos arquivos no diretório
+                                        // Filtra os arquivos para remover os diretórios . e ..
+                                        $arquivos = array_diff($arquivos, array('.', '..'));
+                                        // Exibe os nomes dos arquivos
+                                        foreach ($arquivos as $arquivo) {
+                                            echo '<option id="id" value="' . $arquivo . '">' . $arquivo . '</option>';
+                                        }
+                                        ?>
+                                    </select>
+                                    <label for="empresaInput">Escolha sua empresa/função</label>
                                 </div>
                                 <!-- Submit Button-->
                                 <div class="row" id="alerta"><button class="col btn btn-primary btn-lg mb-3" id="enviarBtn" type="submit">Enviar</button></div>
