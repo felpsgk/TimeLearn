@@ -2,12 +2,13 @@
 function readAgendas()
 {
     require 'conexao.php';
-    $sql = "SELECT c.id, DATE_FORMAT(c.data, '%d/%m/%Y') dataagenda, DATE_FORMAT(c.hora, '%H:%i') horaagenda, c.duracao, t.nome AS topico, t.descricao AS resumotopico, t.imgsrc, u.nome AS consultor
+    $sql = "SELECT c.id, DATE_FORMAT(c.data, '%d/%m/%Y') AS dataagenda, DATE_FORMAT(c.hora, '%H:%i') AS horaagenda, c.duracao, t.nome AS topico, t.descricao AS resumotopico, t.imgsrc, u.nome AS consultor
     FROM consultorias c
     INNER JOIN topicos t ON c.idtopico = t.id
     INNER JOIN users u ON c.idconsultor = u.id
     LEFT JOIN agendas a ON c.id = a.idconsultoria
-    WHERE c.data >= CURDATE()
+    WHERE c.hora > CURTIME()
+    AND c.data >= CURDATE() 
     AND a.id IS NULL;";
     //echo $sql;
     $result = mysqli_query($conn, $sql);
