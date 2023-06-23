@@ -18,10 +18,17 @@
 <!--CONTA CARACTERES RESTANTES-->
 <script>
     $(document).on("input", "#descTopico", function() {
+        var textarea = document.getElementById("myTextarea");
         var limite = 512;
         var caracteresDigitados = $(this).val().length;
         var caracteresRestantes = limite - caracteresDigitados;
         $(".caracteresDesc").text(caracteresRestantes);
+        console.log($(this).height.toString);
+        console.log($(this).scrollHeight.toString);
+        $(this).style.height = "auto";
+        textarea.style.height = textarea.scrollHeight + "px";
+        console.log($(this).height.toString);
+        console.log($(this).scrollHeight.toString);
     });
 </script>
 <!-- Bootstrap core JS-->
