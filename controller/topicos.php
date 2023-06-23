@@ -2,7 +2,7 @@
 function readTopicos()
 {
     require 'conexao.php';
-    $sql = "SELECT id, nome, descricao FROM topicos ORDER BY nome ASC;";
+    $sql = "SELECT id, nome, descricao, imgsrc FROM topicos ORDER BY nome ASC;";
     //echo $sql;
     $result = mysqli_query($conn, $sql);
     //echo $result;
@@ -18,7 +18,7 @@ function readTopicos()
                 </div>
             </div>
         </div>
-        
+
 <?php endwhile;
 }
 ?>
