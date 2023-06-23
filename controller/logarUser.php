@@ -13,15 +13,19 @@ if (
 {
     $usuario = mysqli_real_escape_string($conn, $_POST['login']);
     $senha = mysqli_real_escape_string($conn, $_POST['senha']);
-    $selecionaId = "SELECT * FROM `users` WHERE usuario = '$usuario' AND senha = md5('$senha')";
+    $selecionaId = 
+    "SELECT u.*, up.idperfil AS perfil 
+    FROM users u 
+    JOIN usuario_perfis up ON u.id = up.idusuario
+    WHERE u.usuario = '$usuario' AND u.senha = md5('$senha');";
     //echo $selecionaId;
     $resultado = mysqli_query($conn, $selecionaId);
     $row = mysqli_num_rows($resultado);
     $user = mysqli_fetch_array($resultado);
-    $id = $user['id'];
     if ($row == 1) {
         $_SESSION['usuario'] = $usuario;
-        $_SESSION['id'] = $id;
+        $_SESSION['perfil'] = $user['perfil'];
+        $_SESSION['id'] = $user['id'];
         header('Location: ../topicos.php');
         exit();
     } 
