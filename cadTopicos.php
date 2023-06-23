@@ -53,7 +53,7 @@ include 'includes/head.php';
                                         $arquivos = array_diff($arquivos, array('.', '..'));
                                         // Exibe os nomes dos arquivos
                                         foreach ($arquivos as $arquivo) {
-                                            echo '<option id="id" value="' . $arquivo . '">' . $arquivo . '</option>';
+                                            echo '<option id="id" value="img/' . $arquivo . '">img/' . $arquivo . '</option>';
                                         }
                                         ?>
                                     </select>
