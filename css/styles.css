@@ -11652,7 +11652,7 @@ html {
   background-color: indigo;
   color: white;
 }
-.buscar-horarios {
+#buscarhorarios {
   background: linear-gradient(to right, #4a47a3, #643cad);
   color: #fff;
   width: 100%;
