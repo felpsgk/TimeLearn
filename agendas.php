@@ -47,8 +47,8 @@ include 'includes/head.php'
                 <div class="row gx-5 justify-content-center">
                     <div class="col-lg-11 col-xl-9 col-xxl-8">
                         <?php
-                        require 'controller/topicos.php';
-                        readTopicos();
+                        require 'controller/agendas.php';
+                        readAgendas();
                         ?>
                     </div>
                 </div>
