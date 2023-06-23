@@ -12,9 +12,9 @@ function readTopicos()
                 <div class="d-flex align-items-center">
                     <div class="p-5">
                         <h2 class="fw-bolder"><?php echo $row['nome'] ?></h2>
-                        <p><?php echo $row['descricao'] ?></p>
+                        <p class="text-break"><?php echo $row['descricao'] ?></p>
                     </div>
-                    <img class="img-fluid" src="<?php echo $row['imgsrc'] ?>" alt="..." />
+                    <img class="img-fluid" style="width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                 </div>
             </div>
         </div>
