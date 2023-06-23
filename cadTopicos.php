@@ -36,7 +36,7 @@ include 'includes/head.php';
                                     <label for="nomeInput">Digite o nome do tópico</label>
                                 </div>
                                 <div class="form-floating mb-3">
-                                    <textarea maxLength="512" required="required" class="form-control" placeholder="Leave a comment here" name="descTopico" id="descTopico"></textarea>
+                                    <textarea maxLength="512" style="height: 160px;" required="required" class="form-control" placeholder="Leave a comment here" name="descTopico" id="descTopico"></textarea>
                                     <label for="descTopico">Descrição do tópico</label>
                                     <p class="small text-end"><span class="caracteresDesc">512</span> Restantes</p>
                                 </div>
