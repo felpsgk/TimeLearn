@@ -10,15 +10,6 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
- #buscarhorarios{
-  background: linear-gradient(to right, #1e30f3, #6f42c1);
-  color: #fff;
-  width: 100%;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
- }
 :root {
   --bs-blue: #1e30f3;
   --bs-indigo: #6610f2;
@@ -351,7 +342,13 @@ label {
 }
 
 button {
-  border-radius: 0;
+  background: linear-gradient(to right, #1e30f3, #6f42c1);
+  color: #fff;
+  width: 100%;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 button:focus:not(:focus-visible) {

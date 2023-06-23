@@ -13,7 +13,7 @@ function readTopicos()
                     <div class="p-5">
                         <h2 class="fw-bolder"><?php echo $row['nome'] ?></h2>
                         <p class="text-break"><?php echo $row['descricao'] ?></p>
-                        <button id="buscarhorarios" type="button" class="buscarhorarisos">Buscar agenda</button>
+                        <button type="button" class="button">Buscar agenda</button>
                     </div>
                     <img class="img-fluid" style="width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                 </div>
