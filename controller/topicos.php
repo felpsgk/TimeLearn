@@ -13,12 +13,12 @@ function readTopicos()
                 <div class="card-body p-0">
                     <div class="d-flex align-items-center">
                         <div class="row">
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+                            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-5">
                                 <h2 class="fw-bolder"><?php echo $row['nome'] ?></h2>
                                 <p class="text-break"><?php echo $row['descricao'] ?></p>
                                 <a style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" onmouseover="this.style.background ='linear-gradient(to right, #6f42c1, #1e30f3)';" onmouseout="this.style.background ='linear-gradient(to right, #1e30f3, #6f42c1)';" class="btn" role="button" href="agendas.php">Buscar agenda</a>
                             </div>
-                            <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-6 p-5">
+                            <div class="text-center col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12 p-5">
                                 <img class="img-fluid" style="align-items: center; width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                             </div>
                         </div>
