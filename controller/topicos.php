@@ -3,9 +3,9 @@ function readTopicos()
 {
     require 'conexao.php';
     $sql = "SELECT id, nome, descricao, imgsrc FROM topicos ORDER BY nome ASC;";
-    echo $sql;
+    //echo $sql;
     $result = mysqli_query($conn, $sql);
-    echo $result;
+    //echo $result;
     while ($row = mysqli_fetch_array($result)) :; ?>
         <div class="card overflow-hidden shadow rounded-4 border-0 mb-5">
             <div class="card-body p-0">
