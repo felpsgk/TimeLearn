@@ -1,9 +1,5 @@
 <?php
 session_start();
-include 'includes/head.php';
-echo $_SESSION['usuario'];
-echo $_SESSION['perfil'];
-echo $_SESSION['id'];
 if ($_SESSION['perfil'] <> 1) {
     echo '<style type="text/css">
             #master {
@@ -11,6 +7,11 @@ if ($_SESSION['perfil'] <> 1) {
             }
             </style>';
 }
+include 'includes/head.php';
+echo $_SESSION['usuario'];
+echo $_SESSION['perfil'];
+echo $_SESSION['id'];
+
 ?>
 
 <body id="master" class="d-flex flex-column h-100">
