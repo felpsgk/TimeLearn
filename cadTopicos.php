@@ -1,6 +1,6 @@
 <?php
 session_start();
-if ($_SESSION['perfil'] <> 1) {
+if (!$_SESSION['perfil'] <> 1) {
     echo '<style type="text/css">
             #master {
                 display: none;
