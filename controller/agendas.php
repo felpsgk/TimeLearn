@@ -27,7 +27,7 @@ function readAgendas()
                             <p class="col text-start ms-2 mb-2" id="dataCurso">Dia <?php echo $row['dataagenda'] ?></p>
                             <p class="col text-end ms-2 mb-2">Duração de <?php echo $row['duracao'] ?> minutos</p>
                         </div>
-                        <a style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" onmouseover="this.style.background ='linear-gradient(to right, #6f42c1, #1e30f3)';" onmouseout="this.style.background ='linear-gradient(to right, #1e30f3, #6f42c1)';" class="btn" role="button" href="#">Agendar</a>
+                        <a style="background: linear-gradient(to right, #1e30f3, #6f42c1);  color: #fff;  width: 100%;  padding: 10px 20px;  border: none;  border-radius: 5px;  cursor: pointer;" onmouseover="this.style.background ='linear-gradient(to right, #6f42c1, #1e30f3)';" onmouseout="this.style.background ='linear-gradient(to right, #1e30f3, #6f42c1)';" class="btn" role="button" data-bs-toggle="modal" data-bs-target="#agendarHorarioModal">Agendar</a>
                     </div>
                     <img class="img-fluid" style="width: 300px; height: 400px;" src="<?php echo $row['imgsrc'] ?>" alt="..." />
                 </div>
